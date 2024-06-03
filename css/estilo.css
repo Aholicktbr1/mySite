@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android'; 
+    src: url('../fontes/idroid.otf');
+    font-weight: normal;
+}  
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*variaveis*/
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-titulos: 'Android', sans-serif;
+}
+
+/*inicio*/
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    font-family: var(--fonte-destaque);
+    min-width: 150px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 35px;
+}
+.titulo{
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.753);
+}
+
+header p{
+    font-family: var(--fonte-destaque);
+    font-size: 1em;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+nav{
+    background-color: var(--cor5);
+    font-family: var(--fonte-destaque);
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
+}
+nav a{
+    color: var(--cor1);
+    padding: 3px  9px 3px 9px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    text-decoration: underline;
+}
+
+#rd{
+    border-radius: 50px 50px 0px 0px;
+}
+
+/*inicio_final*/
+/*menu*/
+body{
+    background-color: whitesmoke;
+}
+
+main{ 
+    border-radius: 50px 50px 20px 20px;  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.753);
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main p{
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 25px;
+}
+
+main strong{
+    background-color: var(--cor0);
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+    
+}
+
+.subtitulo{
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    color: var(--cor5);
+    font-size: 25px;
+    font-family: var(--fonte-titulos);
+    text-indent: 10px;
+    padding: 20px;
+    margin: 20px -15px 20px -15px;
+}
+
+/*imagens*/
+img{
+    width: 100%;    
+    display: block;
+    margin: 15px auto 25px auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.753);
+
+}
+.img-pq{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+.video{
+    background-color: var(--cor5);
+    margin: 15px -10px 30px -10px;
+    padding: 20px;
+    padding-bottom: 60%;
+    position: relative;
+    border-radius: 15px;
+
+}
+
+.video iframe{
+    border-color: #83e1ad;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/*imagens_final*/
+/*lista*/
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    margin: 0px 15px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
+}
+
+aside h2{
+    background-color: var(--cor5);
+    color: white;
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside p{
+    margin-bottom: 15px;
+}
+
+aside ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    margin-bottom: 15px;
+}
+/*lista_final*/
+/*menu_final*/
+/*rodape*/
+footer{    
+    border-radius: 10px;  
+    background-color: var(--cor5);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 0.8em;
+    min-width: 300px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer a{
+    color: var(--cor0);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    text-decoration: underline;
+}
+/*rodape_final*/
